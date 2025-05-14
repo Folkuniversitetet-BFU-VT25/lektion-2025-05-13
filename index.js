@@ -9,15 +9,6 @@
 
 // STEG 1: en funktion som tar in kroppsvikt och kroppslängd
 function calcBMI(weight, length) {
-    // bara lägga till en punkt om längden på längden är över 2 siffror
-    console.log(typeof(length));
-    console.log("length of length =", length.length);
-    
-    if (length.length > 1 && !length.includes(".")) {
-        // om användaren lagt in siffran "230"
-        console.log("antagligen i cm");
-    }
-
     // STEG 2: gå igenom formeln och returnera summan
     const BMI = weight / (length * length);
     // STEG 3: Jämföra summan (BMI) med de olika BMI-klassificeringarna
